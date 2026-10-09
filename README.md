@@ -8,26 +8,38 @@ After graduation, I revisited the project to strengthen my software development 
 
 ## Screenshots
 
-### Login
-![StepCal Capture login screen](screenshots/Login.png)
-
-### Step Count
-![StepCal Capture step count screen](screenshots/Step%20Count.png)
-
-### Today's Plan
-![StepCal Capture today's plan](screenshots/Today's%20plan.png)
-
-### Today's Progress
-![StepCal Capture today's progress](screenshots/Today's%20progress.png)
-
-### My Profile
-![StepCal Capture profile screen](screenshots/My%20profile.png)
-
-### StepCal Coach
-![StepCal Capture AI coach](screenshots/StepCal%20Coach.png)
-
-### System Architecture
-![StepCal Capture architecture](screenshots/architecture.png)
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/Login.png" alt="Login screen" width="240"><br>
+      <strong>Login</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/Step%20Count.png" alt="Step count screen" width="240"><br>
+      <strong>Step Count</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/Today's%20plan.png" alt="Today's plan screen" width="240"><br>
+      <strong>Today's Plan</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/Today's%20progress.png" alt="Today's progress screen" width="240"><br>
+      <strong>Today's Progress</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/My%20profile.png" alt="My profile screen" width="240"><br>
+      <strong>My Profile</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/StepCal%20Coach.png" alt="StepCal Coach screen" width="240"><br>
+      <strong>StepCal Coach</strong>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
@@ -59,6 +71,12 @@ After graduation, I revisited the project to strengthen my software development 
 ## Architecture
 
 StepCal Capture uses a client-server architecture.
+
+<p align="center">
+  <img src="screenshots/architecture.png" alt="StepCal Capture system architecture" width="650">
+</p>
+
+<p align="center"><em>High-level architecture of the StepCal Capture application and its backend services.</em></p>
 
 - **Android client:** provides the fitness-tracking interface and communicates with backend endpoints through Retrofit.
 - **Spring Boot backend:** exposes REST endpoints for authentication, profile information, task management, and AI chat.
