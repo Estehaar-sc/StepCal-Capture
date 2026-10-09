@@ -1,10 +1,8 @@
 ﻿# StepCal Capture
 
-StepCal Capture is an Android fitness-tracking application designed to bring everyday activity tracking and personalized fitness goals into one place. The project combines a Java-based Android application with a Spring Boot backend, MySQL persistence, JWT-based authentication, and an AI-powered fitness chat assistant.
+StepCal Capture is an Android fitness-tracking app built with Java, XML, Spring Boot, and MySQL, featuring activity tracking, personalized goals, JWT authentication, and an AI fitness coach.
 
-Originally started as a team project for **CSC299 (Junior Project Design)**, a second-year undergraduate course, the project was left with an unfinished implementation and features that fell short of the original vision.
-
-After graduation, I revisited the project to strengthen my software development skills and bring that vision closer to reality. I expanded the feature set, refined existing functionality, and worked through implementation, integration, debugging, and security improvements, using the free version of ChatGPT as a learning and development assistant.
+Originally developed as a team project for CSC299 (Junior Project Design), I later reconstructed and expanded it to bring the original vision closer to life. Along the way, I explored how the free version of ChatGPT could assist with app development, using it for coding support, debugging, and problem-solving.
 
 ## Screenshots
 
@@ -97,83 +95,37 @@ StepCal-Capture/
 
 ## Quick Start — Windows
 
-### Prerequisites
+**Prerequisites:** Android Studio, a compatible JDK, MySQL, and a Gemini API key for AI chat.
 
-- Windows 10 or 11
-- Android Studio and a compatible Android SDK
-- A compatible JDK for the Android project
-- JDK 17 or newer for the backend
-- MySQL Server
-- A Gemini API key for the AI fitness coach
+### Run the Backend
 
-### 1. Clone the repository
+Create a MySQL database named `stepcal` and configure the required environment variables: `DB_PASSWORD`, `GEMINI_API_KEY`, `JWT_SECRET_BASE64`, `MAIL_USERNAME`, and `MAIL_PASSWORD`.
 
-```bat
-git clone https://github.com/Estehaar-sc/StepCal-Capture.git
-cd StepCal-Capture
-```
-
-### 2. Configure the database
-
-Create a MySQL database named `stepcal` on your local MySQL server.
-
-The development configuration expects MySQL at `localhost:3306`, with the database username `root` by default. Configure your local database password through the `DB_PASSWORD` environment variable.
-
-Hibernate is configured to update the development schema automatically. Verify the database connection and schema before using the application.
-
-### 3. Configure backend environment variables
-
-The backend reads sensitive configuration from environment variables rather than requiring API keys or passwords to be committed to the repository.
-
-| Variable | Purpose |
-|---|---|
-| `DB_PASSWORD` | Local MySQL password |
-| `GEMINI_API_KEY` | Google Gemini API access |
-| `JWT_SECRET_BASE64` | Base64-encoded secret used to sign JWTs |
-| `MAIL_USERNAME` | SMTP account for email functionality |
-| `MAIL_PASSWORD` | SMTP account password or app password |
-
-The production profile additionally requires `DB_URL` and `DB_USERNAME`.
-
-Set the appropriate variables in your local Windows environment or development terminal before starting the backend. Use your own credentials and keep them out of source control.
-
-### 4. Run the backend
-
-Open Command Prompt in the repository root and run:
+From the repository root, run:
 
 ```bat
 cd backend
 mvnw.cmd spring-boot:run
 ```
 
-If necessary, set `JAVA_HOME` to your installed JDK and ensure its `bin` directory is on `PATH`.
+The backend uses port `4006` by default.
 
-The development server uses port `4006` by default.
+### Build the Android App
 
-### 5. Build the Android application
-
-Open the `frontend` directory in Android Studio and allow Gradle synchronization to finish.
-
-Alternatively, from Command Prompt in the repository root, run:
+From the repository root, run:
 
 ```bat
 cd frontend
 gradlew.bat assembleDebug
 ```
 
-The debug APK is generated under:
+The debug APK is generated in `frontend/app/build/outputs/apk/debug/`.
 
-```text
-frontend/app/build/outputs/apk/debug/
-```
+### Device Testing
 
-### 6. Connect the Android client to the backend
+Configure the Android API base URL to use your development computer's reachable local IP address. The phone and computer must be able to communicate over the network.
 
-The current development configuration uses a local-network backend address. For testing on a physical Android device, the phone and development computer must be able to reach one another over the network, and the backend port must be accessible.
-
-Update the Android API base URL to match your development environment when necessary. The current local-network configuration is intended for development and is **not a public production endpoint**.
-
-For remote deployment, use a properly secured HTTPS backend and configure the Android client accordingly.
+For full technical details, see the [Project Report](docs/PROJECT_REPORT.md).
 
 ## Configuration and Security
 
