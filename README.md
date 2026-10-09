@@ -185,7 +185,7 @@ For remote deployment, use a properly secured HTTPS backend and configure the An
 
 ## Development Status
 
-StepCal Capture is an ongoing personal development project. The Android client and Spring Boot backend have been integrated and tested in a local development environment.
+StepCal Capture is a personal development project. The Android client and Spring Boot backend have been integrated and tested in a local development environment.
 
 The backend has passed compilation checks and a lightweight JUnit test. That test verifies the Spring Boot annotation on the main application class; it does not constitute a full application-startup or integration test.
 
