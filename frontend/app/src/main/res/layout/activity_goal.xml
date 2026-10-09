@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF8F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StepCal"
+            android:textColor="#7B2CBF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="What's your goal?"
+            android:textColor="#241A2E"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Choose what you want to achieve. We'll use this to personalize your plan."
+            android:textColor="#756B78"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/goalRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/gain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#7B2CBF"
+                android:padding="18dp"
+                android:text="Gain weight"
+                android:textColor="#241A2E"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/loss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#7B2CBF"
+                android:padding="18dp"
+                android:text="Lose weight"
+                android:textColor="#241A2E"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/build"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#7B2CBF"
+                android:padding="18dp"
+                android:text="Build muscle"
+                android:textColor="#241A2E"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/maintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:buttonTint="#7B2CBF"
+                android:padding="18dp"
+                android:text="Maintain my current weight"
+                android:textColor="#241A2E"
+                android:textSize="17sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#F97316"
+            android:text="Finish setup"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

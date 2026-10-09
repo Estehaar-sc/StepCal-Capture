@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9F5">
+
+    <!-- COMPACT TOP BAR -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:contentDescription="Open navigation menu"
+            android:tint="#4A174C" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StepCal"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#4A174C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#302534" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/stepcal_logo"
+            android:contentDescription="StepCal logo"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+
+    <!-- PROFILE CONTENT -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="22dp">
+
+
+            <!-- PROFILE / EMAIL HERO -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/capture_info_background"
+                android:backgroundTint="#FFB15C"
+                android:elevation="2dp"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp">
+
+                <!-- PROFILE ICON -->
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:gravity="center"
+                    android:text="👤"
+                    android:textSize="38sp"
+                    android:includeFontPadding="false"
+                    android:background="@drawable/capture_info_background"
+                    android:backgroundTint="#FF963F"
+                    android:elevation="1dp"
+                    android:contentDescription="Profile picture" />
+
+                <!-- EMAIL -->
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:text="Email"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#3B2630"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+
+            <!-- USER INFORMATION -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/capture_info_background"
+                android:backgroundTint="#F4EFFA"
+                android:elevation="2dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="12dp">
+
+                <!-- NAME -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Name"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#4A174C" />
+
+                </LinearLayout>
+
+
+                <!-- GENDER -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gender"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="15sp"
+                        android:textColor="#29252B" />
+
+                </LinearLayout>
+
+
+                <!-- AGE -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Age"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textSize="15sp"
+                        android:textColor="#29252B" />
+
+                </LinearLayout>
+
+
+                <!-- HEIGHT -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+                        android:textSize="15sp"
+                        android:textColor="#29252B" />
+
+                </LinearLayout>
+
+
+                <!-- WEIGHT -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textSize="15sp"
+                        android:textColor="#29252B" />
+
+                </LinearLayout>
+
+
+                <!-- GOAL -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Goal"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goal"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#6A2C70" />
+
+                </LinearLayout>
+
+
+                <!-- ACTIVITY LEVEL -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Activity Level"
+                        android:textSize="15sp"
+                        android:textColor="#756B78" />
+
+                    <TextView
+                        android:id="@+id/activity_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activity Level"
+                        android:textSize="15sp"
+                        android:textColor="#29252B" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- DAILY CALORIE TARGET -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/capture_info_background"
+                android:backgroundTint="#FFF0E5"
+                android:elevation="2dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/daily_calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔥 DAILY CALORIE TARGET"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#765E65"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+
+            </LinearLayout>
+
+
+            <!-- VIEW MY TASKS -->
+
+            <Button
+                android:id="@+id/task"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="✓  View My Tasks  ›"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/capture_info_background"
+                android:backgroundTint="#9A78B3"
+                android:elevation="2dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:minHeight="0dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

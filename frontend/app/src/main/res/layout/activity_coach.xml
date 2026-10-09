@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F5">
+
+    <!-- COACH TOP BAR - SPECIAL COMPACT STYLE -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:contentDescription="Open navigation menu"
+            android:tint="#4A174C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="StepCal Coach"
+            android:textColor="#302534"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/stepcal_logo"
+            android:contentDescription="StepCal logo"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+
+    <!-- CHAT AREA -->
+
+    <ScrollView
+        android:id="@+id/chatScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:overScrollMode="ifContentScrolls"
+        android:paddingTop="12dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- FIRST COACH MESSAGE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/capture_info_background"
+                    android:backgroundTint="#FFF0E8"
+                    android:elevation="2dp"
+                    android:paddingStart="17dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="17dp"
+                    android:paddingBottom="14dp"
+                    android:text="Hi! I'm your StepCal Coach.&#10;&#10;Ask me anything — fitness, food, workouts, general questions, planning, studying, or just have a conversation."
+                    android:textColor="#302332"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
+
+            <!-- SUGGESTIONS -->
+
+            <LinearLayout
+                android:id="@+id/suggestionsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="14dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Try asking"
+                    android:textColor="#24152F"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/suggestionToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/capture_info_background"
+                    android:backgroundTint="#F1E7FA"
+                    android:elevation="1dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="13dp"
+                    android:text="📊  How am I doing today?"
+                    android:textColor="#5B3D73"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/suggestionFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/capture_info_background"
+                    android:backgroundTint="#FFF0CC"
+                    android:elevation="1dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="13dp"
+                    android:text="🍽️  What should I eat today?"
+                    android:textColor="#6D4B12"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/suggestionWorkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/capture_info_background"
+                    android:backgroundTint="#EAF5EF"
+                    android:elevation="1dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="13dp"
+                    android:text="💪  What workout should I do?"
+                    android:textColor="#315C46"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- MESSAGE INPUT -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="9dp"
+        android:background="#FFFFFF"
+        android:elevation="7dp">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/capture_info_background"
+            android:backgroundTint="#F1E7FA"
+            android:hint="Ask StepCal Coach..."
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#24152F"
+            android:textColorHint="#8A7C8F"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <TextView
+            android:id="@+id/sendButton"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/capture_info_background"
+            android:backgroundTint="#6F35A8"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:text="➤"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+# Maven build output
+target/
+
+# Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-secret.properties
+secrets/
+*.pem
+*.key
+
+# IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+.apt_generated/
+.vscode/
+
+# Other build tools
+build/
+.gradle/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db

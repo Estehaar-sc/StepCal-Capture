@@ -1,0 +1,45 @@
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# Java and Maven
+**/target/
+*.class
+
+# Android and Gradle
+**/.gradle/
+**/build/
+**/local.properties
+**/.externalNativeBuild/
+**/.cxx/
+*.apk
+*.aab
+
+# IDE settings
+**/.idea/
+*.iml
+.vscode/
+
+# Logs and crash dumps
+*.log
+crash.txt
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+``` id="3dpl82"
+
+# Accidental command output and temporary backups
+backend/findstr
+backend/notepad
+frontend/dir
+**/*.backup
+**/*~
+
+frontend/app/src/main/AndroidManifest .xml
+frontend/app/src/main/java/com/example/stepcal/Activity/Coach.java]

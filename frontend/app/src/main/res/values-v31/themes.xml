@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.StepCal"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowSplashScreenBackground">#FFF9F5</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/stepcal_logo</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">#FFF9F5</item>
+
+    </style>
+
+    <style name="Theme.StepCal" parent="Base.Theme.StepCal" />
+
+</resources>
