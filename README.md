@@ -8,19 +8,38 @@ After graduation, I revisited the project to strengthen my software development 
 
 ## Screenshots
 
-Application screenshots will be added here as the interface documentation is prepared.
+### Login
+![StepCal Capture login screen](screenshots/Login.png)
+
+### Step Count
+![StepCal Capture step count screen](screenshots/Step%20Count.png)
+
+### Today's Plan
+![StepCal Capture today's plan](screenshots/Today's%20plan.png)
+
+### Today's Progress
+![StepCal Capture today's progress](screenshots/Today's%20progress.png)
+
+### My Profile
+![StepCal Capture profile screen](screenshots/My%20profile.png)
+
+### StepCal Coach
+![StepCal Capture AI coach](screenshots/StepCal%20Coach.png)
+
+### System Architecture
+![StepCal Capture architecture](screenshots/architecture.png)
 
 ## Features
 
-- **Step Tracking** â€” tracks walking activity using supported Android step sensors.
-- **Calorie Tracking** â€” calculates calorie estimates and integrates activity data with the backend.
-- **Daily Tasks and Progress** â€” retrieves fitness tasks and records completed activity.
-- **User Profiles** â€” retrieves profile information used by the fitness features.
-- **Authentication** â€” registration and login with JWT-based authentication for protected API endpoints.
-- **AI Fitness Coach** â€” integrates Google's Gemini API through the Spring Boot backend for conversational fitness assistance.
-- **Backend Integration** â€” connects the Android application to REST endpoints backed by MySQL.
+- **Step Tracking** — tracks walking activity using supported Android step sensors.
+- **Calorie Tracking** — calculates calorie estimates and integrates activity data with the backend.
+- **Daily Tasks and Progress** — retrieves fitness tasks and records completed activity.
+- **User Profiles** — retrieves profile information used by the fitness features.
+- **Authentication** — registration and login with JWT-based authentication for protected API endpoints.
+- **AI Fitness Coach** — integrates Google's Gemini API through the Spring Boot backend for conversational fitness assistance.
+- **Backend Integration** — connects the Android application to REST endpoints backed by MySQL.
 
-## Stack
+## Technology Stack
 
 | Component | Technologies |
 |---|---|
@@ -39,10 +58,7 @@ Application screenshots will be added here as the interface documentation is pre
 
 ## Architecture
 
-StepCal Capture uses a clientâ€“server architecture.
-
-![StepCal Capture architecture](screenshots/architecture.png)
-*High-level architecture of the StepCal Capture application and its backend services.*
+StepCal Capture uses a client-server architecture.
 
 - **Android client:** provides the fitness-tracking interface and communicates with backend endpoints through Retrofit.
 - **Spring Boot backend:** exposes REST endpoints for authentication, profile information, task management, and AI chat.
@@ -55,14 +71,15 @@ The Android application and backend are maintained in the same repository.
 
 ```text
 StepCal-Capture/
-â”œâ”€â”€ frontend/       # Android application
-â”œâ”€â”€ backend/        # Spring Boot REST API
-â”œâ”€â”€ screenshots/    # Architecture and future app screenshots
-â”œâ”€â”€ .gitignore
-â””â”€â”€ README.md
+├── frontend/       # Android application
+├── backend/        # Spring Boot REST API
+├── docs/           # Project documentation and engineering report
+├── screenshots/    # App screenshots and architecture diagram
+├── .gitignore
+└── README.md
 ```
 
-## Quick Start â€” Windows
+## Quick Start — Windows
 
 ### Prerequisites
 
@@ -75,10 +92,8 @@ StepCal-Capture/
 
 ### 1. Clone the repository
 
-After the repository is published, replace the placeholder URL with its actual GitHub URL.
-
 ```bat
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/Estehaar-sc/StepCal-Capture.git
 cd StepCal-Capture
 ```
 
@@ -108,15 +123,14 @@ Set the appropriate variables in your local Windows environment or development t
 
 ### 4. Run the backend
 
-Open Command Prompt in the `backend` directory.
-
-Set `JAVA_HOME` to your installed JDK and ensure its `bin` directory is on `PATH`. Then run:
+Open Command Prompt in the repository root and run:
 
 ```bat
-mvn spring-boot:run
+cd backend
+mvnw.cmd spring-boot:run
 ```
 
-If Maven is not installed globally, use your local Maven installation.
+If necessary, set `JAVA_HOME` to your installed JDK and ensure its `bin` directory is on `PATH`.
 
 The development server uses port `4006` by default.
 
@@ -124,7 +138,7 @@ The development server uses port `4006` by default.
 
 Open the `frontend` directory in Android Studio and allow Gradle synchronization to finish.
 
-Alternatively, from Command Prompt in the repository root:
+Alternatively, from Command Prompt in the repository root, run:
 
 ```bat
 cd frontend
@@ -151,7 +165,7 @@ For remote deployment, use a properly secured HTTPS backend and configure the An
 - Keep local configuration files out of Git and use environment variables for sensitive settings.
 - Rotate credentials if they have been exposed.
 - Use HTTPS, appropriate access controls, and request-abuse protections before deploying the backend publicly.
-- Review all inherited code and resolve ownership and permission questions before public release.
+- Review inherited code and resolve ownership and permission questions before commercial use or redistribution.
 
 ## Development Status
 
@@ -164,7 +178,6 @@ The backend has passed compilation checks and a lightweight JUnit test. That tes
 - Expand automated backend and Android test coverage.
 - Improve configuration for development and production environments.
 - Complete the security and credential-handling audit.
-- Add documented application screenshots.
 - Improve deployment and setup documentation.
 - Continue refining the fitness-tracking experience and AI coach.
 
@@ -172,11 +185,11 @@ The backend has passed compilation checks and a lightweight JUnit test. That tes
 
 The detailed engineering report documents the project background, architecture, implementation decisions, security work, build and test results, known limitations, and future improvements.
 
-See [Project Report](docs/PROJECT_REPORT.md).
+See the [Project Report](docs/PROJECT_REPORT.md).
 
 ## License
 
-**Proprietary â€” All rights reserved.**
+**Proprietary — All rights reserved.**
 
 StepCal Capture is shared publicly for portfolio and demonstration purposes only. No license is currently granted to copy, modify, redistribute, or use this project commercially. Licensing and contribution rights will be reviewed before any public launch.
 
