@@ -8,10 +8,6 @@ After graduation, I revisited the project to strengthen my software development 
 
 ## Screenshots
 
-## Screenshots
-
-## Screenshots
-
 <table>
   <tr>
     <td align="center" width="33%">
