@@ -10,33 +10,35 @@ After graduation, I revisited the project to strengthen my software development 
 
 ## Screenshots
 
+## Screenshots
+
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="screenshots/Login.png" alt="Login screen" width="160"><br>
-      <strong>Login</strong>
+      <img src="screenshots/Login.png" alt="Login screen" width="130"><br>
+      <sub><strong>Login</strong></sub>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/Step%20Count.png" alt="Step count screen" width="160"><br>
-      <strong>Step Count</strong>
+      <img src="screenshots/Step%20Count.png" alt="Step count screen" width="130"><br>
+      <sub><strong>Step Count</strong></sub>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/Today's%20plan.png" alt="Today's plan screen" width="160"><br>
-      <strong>Today's Plan</strong>
+      <img src="screenshots/Today's%20plan.png" alt="Today's plan screen" width="130"><br>
+      <sub><strong>Today's Plan</strong></sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="33%">
-      <img src="screenshots/Today's%20progress.png" alt="Today's progress screen" width="160"><br>
-      <strong>Today's Progress</strong>
+      <img src="screenshots/Today's%20progress.png" alt="Today's progress screen" width="130"><br>
+      <sub><strong>Today's Progress</strong></sub>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/My%20profile.png" alt="My profile screen" width="160"><br>
-      <strong>My Profile</strong>
+      <img src="screenshots/My%20profile.png" alt="My profile screen" width="130"><br>
+      <sub><strong>My Profile</strong></sub>
     </td>
     <td align="center" width="33%">
-      <img src="screenshots/StepCal%20Coach.png" alt="StepCal Coach screen" width="160"><br>
-      <strong>StepCal Coach</strong>
+      <img src="screenshots/StepCal%20Coach.png" alt="StepCal Coach screen" width="130"><br>
+      <sub><strong>StepCal Coach</strong></sub>
     </td>
   </tr>
 </table>
